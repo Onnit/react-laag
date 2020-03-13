@@ -43,7 +43,7 @@ export default [
       babel(
         getBabelConfig(
           { useESModules: true },
-          ">1%, not dead, not ie 11, not op_mini all"
+          ">1%, not dead, not ie <= 10, not op_mini all"
         )
       ),
       resolve({ extensions })
@@ -63,7 +63,7 @@ export default [
       babel(
         getBabelConfig(
           { useESModules: false },
-          ">1%, not dead, not ie 11, not op_mini all"
+          ">1%, not dead, not ie <= 10, not op_mini all"
         )
       ),
       resolve({ extensions })
